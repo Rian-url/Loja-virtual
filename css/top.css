@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: black;
+    background-color: beige;
+}
+
+header nav {
+    background-color: burlywood;
+    padding: 10px 0;
+}
+
+header nav .logo {
+    color: white;
+    text-decoration: none;
+}
+
+header nav .ctn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.meenu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.ctn {
+    width: 90vw;
+    margin: 0px auto;
+}
+
+.hero {
+    background-image: url('../imgs/img5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 325px;
+    display: flex;
+    align-items: center;
+}
+
+#formSearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formSearch input {
+    width: 70vw;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgb(0, 0, 0, .3);
+    text-align: center;
+}
+
+main {
+    margin: 20px 0px;
+}
+
+main .ctn h3 {
+    font-size: 2vw;
+    margin-bottom: 20px;
+}
+
+.pratos {
+    display: flex;
+    flex-direction: column;
+}
+
+.prato {
+    background-color: white;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgb(0, 0, 0, .3);
+}
+
+.prato img {
+    border-radius: 5px 5px 0px 0px;
+}
+
+.prato h4 {
+    padding: 0px 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.prato p {
+    padding: 0px 20px;
+    font-size: 1rem;
+}
+
+.prato button {
+    margin: 20px auto;
+    padding: 10px;
+    width: 50%;
+    font-weight: bold;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.hero-sobre {
+    height: 300;
+    background-color: aliceblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-sobre .ctn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 600px) {
+    .pratos {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    main .ctn .pratos .prato {
+        width: 350px;
+    }
+}
